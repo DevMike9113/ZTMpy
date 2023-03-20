@@ -1,25 +1,25 @@
-# variables
-iq = 190
+# # variables
+# iq = 190
 
-# BEST PRACTICES FOR VARS
-# snake_case
-# Start with lowercase or underscore
-# letters, numbers, underscores
-# case sensitive
-# dont overwrite keywords
+# # BEST PRACTICES FOR VARS
+# # snake_case
+# # Start with lowercase or underscore
+# # letters, numbers, underscores
+# # case sensitive
+# # dont overwrite keywords
 
-user_age = iq/4
+# user_age = iq/4
 
-z = user_age
+# z = user_age
 
-# constants = should never be changed
-PI = 3.14
+# # constants = should never be changed
+# PI = 3.14
 
-# dont touch these
+# # dont touch these
 
-a,b,c = 1,2,3
+# a,b,c = 1,2,3
 
-print(z)
-print(PI)
-print(iq) 
-print(c)
+# print(z)
+# print(PI)
+# print(iq) 
+# print(c)
