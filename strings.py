@@ -30,3 +30,14 @@ print(c)
 
 # same as above
 print(type(int(str(100))))
+
+# ---------------
+# Escape Sequences
+
+# \ = everything after this is a string 
+# \t = tab
+# \n = new line
+
+weather = "\t It\'s \"kind of\" sunny \n hope you are having a good one!"
+
+print(weather)
