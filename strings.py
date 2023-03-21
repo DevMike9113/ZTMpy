@@ -101,3 +101,14 @@ print(quote.upper())
 print(quote.capitalize())
 print(quote.find('be'))
 print(quote.replace("be", "me"))
+
+# ---------------
+
+# booleans
+name = 'Mike'
+is_cool = False
+is_cool = True
+
+print(bool(1)) # True
+print(bool(0)) # False
+
