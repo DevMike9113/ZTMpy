@@ -41,3 +41,17 @@ print(type(int(str(100))))
 weather = "\t It\'s \"kind of\" sunny \n hope you are having a good one!"
 
 print(weather)
+
+# ---------------------
+
+# formatted strings
+name = 'Johnny'
+age = 55
+
+# f before string -- new feature in Py3
+print(f'hi 1{name}. You are {age} years old')
+
+# old way
+print('hi 2{}. You are {} years old'.format(name, age))
+print('hi 3{0}. You are {1} years old'.format(name, age))
+print('hi 4{1}. You are {0} years old'.format(name, age))
