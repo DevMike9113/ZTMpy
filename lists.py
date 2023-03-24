@@ -139,31 +139,3 @@
 # print(weapons)
 
 # # --------------------
-# # Dictionary
-# # data type & data structure
-# # dict will have a key and value
-# dicts = {
-#     'a' : 1, # key value pairs
-#     'b' : [9, 'hi', False],
-#     'c' : 'hello world',
-#     'd' : True
-# }
-# # curly braces denotes a dictionary
-# # dictionary is an unordered key value pair
-
-# print(dicts['a'])
-# print(dicts)
-
-# my_list = [
-#     {
-#     'a' : 1, # key value pairs
-#     'b' : [9, 'hi', False],
-#     },
-#     {
-#     'c' : 'hello world',
-#     'd' : True
-#     }
-# ]
-# print("my_list:", my_list[0]['b'][1])
-
-# -------------------
