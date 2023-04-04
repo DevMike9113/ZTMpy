@@ -51,3 +51,9 @@
 ## _ !=
 ## not(False)
 
+# ----------
+# is vs ==
+
+# == is equality
+# is checks the exact thing that you are looking for 
+# [] is [] results in False because arrays are placed in different areas of memory each time
