@@ -42,13 +42,12 @@
 
 # ---------------
 
-# Logical opperator
-# >
-# <
-# == # equal, comparing
-# >=
-# <=
-# _ !=
-# not(False)
-
+## Logical operator
+## >
+## <
+## == # equal, comparing
+## >=
+## <=
+## _ !=
+## not(False)
 
