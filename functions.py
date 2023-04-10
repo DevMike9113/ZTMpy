@@ -26,17 +26,54 @@
 
 # say_hello() # default parameters
 
-# -----------------
+# # -----------------
 
-def sums(n1,n2):
-    def func(r1, r2):
-        return r1 + r2
-    return func(n1,n2)
+# def sums(n1,n2):
+#     def func(r1, r2):
+#         return r1 + r2
+#     return func(n1,n2)
     
-# function should do one thing really well
-# should return something
+# # function should do one thing really well
+# # should return something
 
-total = sums(10,5)
-print(sums(4,total))
+# total = sums(10,5)
+# print(sums(4,total))
 
-# a return keyword automatically exits a function
+# # a return keyword automatically exits a function
+
+# # ------------------
+
+# # functions
+# list()
+# print()
+# max()
+# min()
+# input()
+
+# def something():
+#     pass
+# something()
+
+# # methods have to be owned by something
+# # the owner is whatever is to the LEFT of the .
+# 'hello'.capitalize()
+
+## --------------
+# '''
+# this is info about the function
+# '''
+
+# ---------------
+
+# args kwargs
+# star is a tuple
+
+def super_func(param, *args, i='default params', **kwargs):
+    total = 0
+    for items in kwargs.values():
+        total += items
+    return sum(args) + total
+
+print(super_func(1,2, num1=3, num2=10))
+
+# RULE: params, *args, default params, **kwargs
