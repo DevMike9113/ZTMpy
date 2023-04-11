@@ -1,0 +1,37 @@
+command line:
+
+    pwd
+    present working directory
+
+    cd /
+    takes you to the root directory
+
+    cd ~
+    takes you to the user directory
+
+    open .
+    opens the folder that you are currently in
+
+    touch example.html
+    creates a file
+
+    open -a "Sublime Text" example.html
+    opens the file in Sublime Text
+
+    mv example.html test.html
+    essentially changes the name of the file
+
+    rm test.html
+    removes file
+
+    rm -r testFolder
+    removes folder
+
+    python3 test.py 
+    runs the python code
+
+    
+
+
+
+
