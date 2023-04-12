@@ -12,14 +12,16 @@
 #
 # # -------------
 
-class PlayerCharacter: # self refers back to the class
-    membership = True # class object attribute
+class PlayerCharacter:  # self refers back to the class
+    membership = True  # class object attribute
+
     def __init__(self, name='', age=0, attack=5):
         # constructor method or init method
-        if (self.membership):
-            self.name = name # self hasnt refers to what hasnt been created yet
-            self.age = age # attributes | properties
+        if self.membership:
+            self.name = name  # self hasnt refers to what hasnt been created yet
+            self.age = age  # attributes | properties
             self.attack = attack
+
     def run(self):
         print('run')
         return "done"
