@@ -95,19 +95,86 @@
 # # ----------------
 
 # # map, filter, zip, reduce
+#
+# from functools import reduce
+#
+# my_list = [1, 2, 3]
+#
+#
+# def accumulator(acc, item):
+#     print('acc, item', acc, item)
+#     return acc + item
+#
+#
+# # reduce(def_reducer, item/iterable[], initialVal
+# redoos = reduce(accumulator, my_list, 0)
+#
+# print('reduce', redoos)
+# print('my list', my_list)
 
-from functools import reduce
+# # -------------------
 
-my_list = [1, 2, 3]
+# # lambda expressions
+# # used for functions that we ONLY NEED ONCE
+#
+# from functools import reduce
+#
+# my_list = [1, 2, 3]
+#
+# # lambda param: action(param):
+#
+# # def multiply_by2(item):
+# #     return item * 2
+# tot = list(map(lambda item: item * 2, my_list))
+#
+# # def check_odd(item):
+# #     return item % 2 != 0
+# fil = list(filter(lambda item: item % 2 != 0, my_list))
+#
+# # def accumulator(acc, item):
+# #     return acc + item
+# redoos = reduce(lambda acc, item: acc + item, my_list, 0)
+#
+# print('lambda | map', tot)
+# print('lambda | filter', fil)
+# print('lambda | reduce', redoos)
+# print('my list', my_list)
 
+# # -----------------
 
-def accumulator(acc, item):
-    print('acc, item', acc, item)
-    return acc + item
+# Comprehension
+# list, set, dictionary
 
+# my_list = [param for param in iterable]
 
-# reduce(def_reducer, item/iterable[], initialVal
-redoos = reduce(accumulator, my_list, 0)
+# for char in 'hello':
+#     my_list.append(char)
 
-print('reduce', redoos)
-print('my list', my_list)
+my_list = [char for char in 'hello']
+my_list2 = [num for num in range(0, 100)]
+my_list3 = [num ** 2 for num in range(0, 100)]
+my_list4 = [num ** 2 for num in range(0, 100) if num % 2 == 0]
+
+print(my_list4)
+
+# # ----------------
+
+# my_set = {char for char in 'hello'}
+# my_set2 = {num for num in range(0, 100)}
+# my_set3 = {num ** 2 for num in range(0, 100)}
+# my_set4 = {num ** 2 for num in range(0, 100) if num % 2 == 0}
+
+# print(my_set)
+# print(my_set2)
+# print(my_set3)
+# print(my_set4)
+
+# simple_dict = {
+#     'a': 1,
+#     'b': 2
+# }
+
+# my_dict = {k: v ** 2 for k, v in simple_dict.items() if v % 2 == 0}
+# my_dict2 = {num: num * 2 for num in [1, 2, 3]}
+
+# print(my_dict2)
