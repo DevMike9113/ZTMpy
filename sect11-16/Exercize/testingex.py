@@ -1,17 +1,23 @@
-import sys
 from random import randint
 
-answer = randint(int(sys.argv[1]), int(sys.argv[2]))
 
-while True:
-    try:
-        guess = int(input('type a number 1-10:  '))
-        if 0 < guess < 11:
-            if guess == answer:
-                print('correctomundo')
+def run_guess(guess, answer):
+    if 0 < guess < 11:
+        if guess == answer:
+            print('correctomundo')
+            # break - is for loops
+            return True
+    else:
+        print('hey 1-10 man')
+
+
+if __name__ == '__main__':
+    answer = randint(1, 10)
+    while True:
+        try:
+            guess = int(input('type a number 1-10:  '))
+            if run_guess(guess, answer):
                 break
-        else:
-            print('hey 1-10 man')
-    except ValueError:
-        print('please enter a number')
-        continue
+        except ValueError:
+            print('please enter a number')
+            continue
