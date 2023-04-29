@@ -9,6 +9,7 @@ def run_guess(guess, answer):
             return True
     else:
         print('hey 1-10 man')
+        return False
 
 
 if __name__ == '__main__':
