@@ -15,3 +15,5 @@ fil_img = img.convert('L')
 # crooked.save("grey.png", 'png')
 resize = fil_img.resize((300, 300))  # resize needs a tuple
 resize.save("grey.png", 'png')
+
+
